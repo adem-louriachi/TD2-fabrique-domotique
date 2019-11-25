@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class AppliDomotique {
     static ArrayList<Connectable> objets = new ArrayList<Connectable>();
 
+
     public static int menu() {
         int choix = 1;
         System.out.println("Taper 0 pour finir, 1 pour connecter une cafetière et 2 pour une radio");
@@ -23,10 +24,14 @@ public class AppliDomotique {
     public static void connecter(int type) {
         switch (type) {
             case 1:
-                /* A completer */
+                Connectable cafetiere = new Cafetiere();
+                objets.add(cafetiere);
+                cafetiere.equiper("Tommy Hilfiger");
                 break;
             case 2:
-                /* A completer */
+                Connectable radio = new Radio();
+                objets.add(radio);
+                radio.equiper("Le Magnificent");
                 break;
         }
     }
