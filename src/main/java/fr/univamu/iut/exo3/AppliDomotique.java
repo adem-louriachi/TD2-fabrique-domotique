@@ -2,6 +2,6 @@ package fr.univamu.iut.exo3;
 
 public class AppliDomotique {
     public static void main(String[] args) {
-        throw new RuntimeException("Not yet implemented !");
+        Imprimante i = new Scanner(new Fax(new ImprimanteLocale()));
     }
 }
